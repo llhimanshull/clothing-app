@@ -3,26 +3,26 @@
 export default function Marquee() {
   const items = [
     "PRE-PURCHASE ADVISOR",
-    "â-†",
+    "â—†",
     "AI OUTFIT MATCHING",
-    "â-†",
+    "â—†",
     "BORROW FROM FRIENDS",
-    "â-†",
+    "â—†",
     "DIGITAL WARDROBE",
-    "â-†",
+    "â—†",
     "SUSTAINABLE FASHION",
-    "â-†",
+    "â—†",
     "BUY LESS",
-    "â-†",
+    "â—†",
     "BORROW MORE",
-    "â-†",
+    "â—†",
   ];
 
   return (
     <div className="marquee-section">
       <div className="marquee-track">
         {[...items, ...items].map((item, i) => (
-          <span key={i} className={item === "â-†" ? "divider" : ""}>
+          <span key={i} className={item === "â—†" ? "divider" : ""}>
             {item}
           </span>
         ))}
@@ -30,4 +30,3 @@ export default function Marquee() {
     </div>
   );
 }
-

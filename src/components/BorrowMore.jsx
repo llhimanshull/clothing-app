@@ -107,14 +107,14 @@ export default function BorrowMore() {
 
           <div className="borrow-more__features">
             <div className="borrow-feature">
-              <div className="borrow-feature__icon">�-</div>
+              <div className="borrow-feature__icon">🔗</div>
               <div className="borrow-feature__text">
                 <h4>Trusted Circle</h4>
                 <p>Grant specific friends access to browse your digital wardrobe - you control who sees what.</p>
               </div>
             </div>
             <div className="borrow-feature">
-              <div className="borrow-feature__icon">�-</div>
+              <div className="borrow-feature__icon">👗</div>
               <div className="borrow-feature__text">
                 <h4>One-Tap Borrow Request</h4>
                 <p>See something you love? Request to borrow it for a specific occasion with one tap.</p>
@@ -170,4 +170,3 @@ export default function BorrowMore() {
     </section>
   );
 }
-
