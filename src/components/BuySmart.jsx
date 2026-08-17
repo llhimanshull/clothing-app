@@ -38,7 +38,7 @@ export default function BuySmart() {
         delay: 0.2,
       });
 
-      // Step cards — staggered reveal
+      // Step cards - staggered reveal
       gsap.from(".step-card", {
         scrollTrigger: {
           trigger: ".buy-smart__steps",
@@ -85,7 +85,7 @@ export default function BuySmart() {
       number: "01",
       icon: "📸",
       title: "SNAP IT",
-      text: "Photograph any clothing item while shopping — in-store or browsing online. Our AI recognizes the piece instantly.",
+      text: "Photograph any clothing item while shopping - in-store or browsing online. Our AI recognizes the piece instantly.",
     },
     {
       number: "02",
@@ -97,7 +97,7 @@ export default function BuySmart() {
       number: "03",
       icon: "✨",
       title: "STYLE IT",
-      text: "Get complete outfit pairings from clothes you already own — not just a score, but a fully styled look you can wear.",
+      text: "Get complete outfit pairings from clothes you already own - not just a score, but a fully styled look you can wear.",
     },
   ];
 
@@ -108,7 +108,7 @@ export default function BuySmart() {
           <span className="buy-smart__label">Feature One</span>
           <h2 className="buy-smart__title">BUY SMART</h2>
           <p className="buy-smart__desc">
-            AI-powered outfit matching — before checkout.
+            AI-powered outfit matching - before checkout.
           </p>
         </div>
 
@@ -126,7 +126,7 @@ export default function BuySmart() {
         <div className="buy-smart__example">
           <span className="buy-smart__example-label">Example Suggestion</span>
           <p className="buy-smart__example-text">
-            &ldquo;This navy blazer pairs perfectly with your black slim jeans, tan leather boots, and gold hoop earrings — 95% wardrobe match.&rdquo;
+            &ldquo;This navy blazer pairs perfectly with your black slim jeans, tan leather boots, and gold hoop earrings - 95% wardrobe match.&rdquo;
           </p>
         </div>
       </div>

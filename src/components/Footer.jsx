@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="footer__brand">
           <div className="footer__logo">ATAYR</div>
           <p className="footer__tagline">
-            Buy less. Borrow more. Your pre-purchase wardrobe advisor — powered by AI, backed by friends.
+            Buy less. Borrow more. Your pre-purchase wardrobe advisor - powered by AI, backed by friends.
           </p>
         </div>
 

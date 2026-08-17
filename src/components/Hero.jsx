@@ -320,7 +320,7 @@ export default function Hero({ isLoaded }) {
         <div className="hero__content">
           <div className="hero__badge">
             <span className="hero__badge-dot" />
-            Coming Soon — Join the Waitlist
+            Coming Soon - Join the Waitlist
           </div>
 
           <h1 className="hero__title">ATAYR</h1>

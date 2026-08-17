@@ -93,7 +93,7 @@ export default function SolutionIntro() {
       number: "01",
       icon: "📸",
       title: "SNAP IT",
-      text: "Photograph any clothing item while shopping — in-store or browsing online. Our AI recognizes the piece instantly.",
+      text: "Photograph any clothing item while shopping - in-store or browsing online. Our AI recognizes the piece instantly.",
     },
     {
       number: "02",
@@ -105,7 +105,7 @@ export default function SolutionIntro() {
       number: "03",
       icon: "✨",
       title: "STYLE IT",
-      text: "Get complete outfit pairings from clothes you already own — not just a score, but a fully styled look you can wear.",
+      text: "Get complete outfit pairings from clothes you already own - not just a score, but a fully styled look you can wear.",
     },
   ];
 
@@ -124,11 +124,11 @@ export default function SolutionIntro() {
             <div className="solution-intro__features" style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: "40px" }}>
               <div className="solution-intro__feature" style={{ display: "flex", alignItems: "center", gap: "14px", padding: "16px 32px", border: "2px solid #01555126", borderRadius: "60px", color: "var(--teal)", fontWeight: 500, fontSize: "16px" }}>
                 <span className="solution-intro__feature-icon" style={{ fontSize: "24px" }}>🧠</span>
-                Buy Smart — AI Outfit Matching
+                Buy Smart - AI Outfit Matching
               </div>
               <div className="solution-intro__feature" style={{ display: "flex", alignItems: "center", gap: "14px", padding: "16px 32px", border: "2px solid #01555126", borderRadius: "60px", color: "var(--teal)", fontWeight: 500, fontSize: "16px" }}>
                 <span className="solution-intro__feature-icon" style={{ fontSize: "24px" }}>🤝</span>
-                Borrow More — Friend Wardrobe Lending
+                Borrow More - Friend Wardrobe Lending
               </div>
             </div>
           </div>
@@ -156,7 +156,7 @@ export default function SolutionIntro() {
               <span className="buy-smart__label" style={{ display: "block", letterSpacing: "3px", textTransform: "uppercase", color: "var(--teal)", marginBottom: "12px", fontSize: "13px", fontWeight: 600 }}>Feature One</span>
               <h2 className="buy-smart__title" style={{ fontFamily: "var(--font-display)", color: "var(--coral)", letterSpacing: "3px", marginBottom: "15px", fontSize: "clamp(36px, 6vw, 76px)", lineHeight: 1 }}>BUY SMART</h2>
               <p className="buy-smart__desc" style={{ color: "var(--teal)", opacity: 0.7, margin: "0 auto", fontSize: "clamp(15px, 2vw, 18px)", maxWidth: "500px" }}>
-                AI-powered outfit matching — before checkout.
+                AI-powered outfit matching - before checkout.
               </p>
             </div>
 
@@ -174,7 +174,7 @@ export default function SolutionIntro() {
             <div className="buy-smart__example" style={{ background: "var(--white)", border: "1px solid var(--gray-light)", borderRadius: "20px", padding: "20px 24px", textAlign: "center", maxWidth: "800px", margin: "0 auto" }}>
               <span className="buy-smart__example-label" style={{ display: "inline-block", background: "#fe4f2d1a", color: "var(--coral)", padding: "4px 12px", borderRadius: "30px", fontSize: "12px", fontWeight: 600, letterSpacing: "1px", textTransform: "uppercase", marginBottom: "12px" }}>Example Suggestion</span>
               <p className="buy-smart__example-text" style={{ color: "var(--teal)", fontSize: "16px", fontStyle: "italic", lineHeight: 1.5, margin: 0 }}>
-                &ldquo;This navy blazer pairs perfectly with your black slim jeans, tan leather boots, and gold hoop earrings — 95% wardrobe match.&rdquo;
+                &ldquo;This navy blazer pairs perfectly with your black slim jeans, tan leather boots, and gold hoop earrings - 95% wardrobe match.&rdquo;
               </p>
             </div>
           </div>

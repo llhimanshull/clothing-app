@@ -96,7 +96,7 @@ export default function Problem() {
               <div className="stat-card">
                 <div className="stat-card__number counter-1">0%</div>
                 <div className="stat-card__label">
-                  Online clothing return rate — mostly from size & style uncertainty
+                  Online clothing return rate - mostly from size & style uncertainty
                 </div>
               </div>
               <div className="stat-card">

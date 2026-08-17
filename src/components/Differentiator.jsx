@@ -49,13 +49,13 @@ export default function Differentiator() {
           WE HELP YOU DECIDE WHAT TO BUY.
         </p>
         <p className="differentiator__line">
-          AND IF YOU DON&apos;T NEED TO BUY —
+          AND IF YOU DON&apos;T NEED TO BUY -
         </p>
         <p className="differentiator__line differentiator__line-highlight">
           JUST BORROW IT.
         </p>
         <p className="differentiator__line-sub">
-          Atayr is the only app combining pre-purchase AI outfit matching with peer-to-peer wardrobe lending — attacking both impulse buying and one-time-wear clothing waste.
+          Atayr is the only app combining pre-purchase AI outfit matching with peer-to-peer wardrobe lending - attacking both impulse buying and one-time-wear clothing waste.
         </p>
       </div>
     </section>

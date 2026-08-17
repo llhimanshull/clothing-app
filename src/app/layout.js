@@ -15,9 +15,9 @@ const migha = localFont({
 });
 
 export const metadata = {
-  title: "Atayr — Buy Less. Borrow More.",
+  title: "Atayr - Buy Less. Borrow More.",
   description:
-    "Your pre-purchase wardrobe advisor. See what fits your closet before you buy it — or just borrow it from a friend. Join the Atayr waitlist.",
+    "Your pre-purchase wardrobe advisor. See what fits your closet before you buy it - or just borrow it from a friend. Join the Atayr waitlist.",
   keywords: [
     "Atayr",
     "wardrobe",
@@ -40,18 +40,18 @@ export const metadata = {
     "clothing app"
   ],
   openGraph: {
-    title: "Atayr — Buy Less. Borrow More.",
+    title: "Atayr - Buy Less. Borrow More.",
     description:
-      "Your pre-purchase wardrobe advisor. See what fits your closet before you buy it — or just borrow it from a friend.",
+      "Your pre-purchase wardrobe advisor. See what fits your closet before you buy it - or just borrow it from a friend.",
     type: "website",
     locale: "en_US",
     siteName: "Atayr",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Atayr — Buy Less. Borrow More.",
+    title: "Atayr - Buy Less. Borrow More.",
     description:
-      "Your pre-purchase wardrobe advisor. See what fits your closet before you buy it — or just borrow it from a friend.",
+      "Your pre-purchase wardrobe advisor. See what fits your closet before you buy it - or just borrow it from a friend.",
   },
 };
 

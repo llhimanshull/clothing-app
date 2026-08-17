@@ -107,14 +107,14 @@ export default function BorrowMore() {
 
           <div className="borrow-more__features">
             <div className="borrow-feature">
-              <div className="borrow-feature__icon">🔗</div>
+              <div className="borrow-feature__icon">�-</div>
               <div className="borrow-feature__text">
                 <h4>Trusted Circle</h4>
-                <p>Grant specific friends access to browse your digital wardrobe — you control who sees what.</p>
+                <p>Grant specific friends access to browse your digital wardrobe - you control who sees what.</p>
               </div>
             </div>
             <div className="borrow-feature">
-              <div className="borrow-feature__icon">👗</div>
+              <div className="borrow-feature__icon">�-</div>
               <div className="borrow-feature__text">
                 <h4>One-Tap Borrow Request</h4>
                 <p>See something you love? Request to borrow it for a specific occasion with one tap.</p>
@@ -124,7 +124,7 @@ export default function BorrowMore() {
               <div className="borrow-feature__icon">♻️</div>
               <div className="borrow-feature__text">
                 <h4>Reduce One-Time Wear</h4>
-                <p>Weddings, interviews, parties — borrow instead of buying clothes you&apos;ll only wear once.</p>
+                <p>Weddings, interviews, parties - borrow instead of buying clothes you&apos;ll only wear once.</p>
               </div>
             </div>
           </div>
@@ -136,7 +136,7 @@ export default function BorrowMore() {
             <div className="scenario-card__emoji">💃</div>
             <h3 className="scenario-card__title">Wedding this Saturday?</h3>
             <p className="scenario-card__text">
-              Borrow Sarah&apos;s emerald cocktail dress instead of buying one you&apos;ll wear once and forget. She&apos;s not using it anyway — and you both win.
+              Borrow Sarah&apos;s emerald cocktail dress instead of buying one you&apos;ll wear once and forget. She&apos;s not using it anyway - and you both win.
             </p>
             <span className="scenario-card__action">
               Request to Borrow →
@@ -170,3 +170,4 @@ export default function BorrowMore() {
     </section>
   );
 }
+
