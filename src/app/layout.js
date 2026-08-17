@@ -18,7 +18,27 @@ export const metadata = {
   title: "Atayr — Buy Less. Borrow More.",
   description:
     "Your pre-purchase wardrobe advisor. See what fits your closet before you buy it — or just borrow it from a friend. Join the Atayr waitlist.",
-  keywords: "wardrobe, fashion, AI styling, borrow clothes, sustainable fashion, outfit matching",
+  keywords: [
+    "Atayr",
+    "wardrobe",
+    "fashion",
+    "AI styling",
+    "borrow clothes",
+    "sustainable fashion",
+    "outfit matching",
+    "wardrobe management",
+    "shared closet",
+    "circular fashion",
+    "eco-friendly fashion",
+    "personal stylist app",
+    "peer-to-peer clothing rental",
+    "pre-purchase advisor",
+    "closet matching",
+    "digital closet",
+    "virtual closet",
+    "closet organizer",
+    "clothing app"
+  ],
   openGraph: {
     title: "Atayr — Buy Less. Borrow More.",
     description:
@@ -33,6 +53,12 @@ export const metadata = {
     description:
       "Your pre-purchase wardrobe advisor. See what fits your closet before you buy it — or just borrow it from a friend.",
   },
+};
+
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
 };
 
 export default function RootLayout({ children }) {

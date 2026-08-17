@@ -5,8 +5,8 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Marquee from "@/components/Marquee";
 import Problem from "@/components/Problem";
+
 import SolutionIntro from "@/components/SolutionIntro";
-import BuySmart from "@/components/BuySmart";
 import BorrowMore from "@/components/BorrowMore";
 import Differentiator from "@/components/Differentiator";
 import WaitlistCTA from "@/components/WaitlistCTA";
@@ -47,8 +47,8 @@ export default function Home() {
         <Hero isLoaded={isLoaded} />
         <Marquee />
         <Problem />
+
         <SolutionIntro />
-        <BuySmart />
         <BorrowMore />
         <Differentiator />
         <WaitlistCTA />

@@ -93,7 +93,8 @@ export default function BorrowMore() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="borrow-more" id="borrow-more">
+    <section ref={sectionRef} className="borrow-more" id="borrow-more" style={{ position: "relative" }}>
+      
       <div className="borrow-more__shape" />
 
       <div className="borrow-more__grid container">

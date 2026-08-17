@@ -1,5 +1,7 @@
 /* [project]/src/app/globals.css [app-client] (css) */
-*, :before, :after {
+*,
+:before,
+:after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -158,8 +160,8 @@ body:before {
 
 .hero {
   background: radial-gradient(circle at top left, #39FF1414 0%, transparent 40%),
-              radial-gradient(circle at bottom right, #39FF1414 0%, transparent 40%),
-              var(--cream);
+    radial-gradient(circle at bottom right, #39FF1414 0%, transparent 40%),
+    var(--cream);
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -189,16 +191,31 @@ body:before {
 }
 
 @media (max-width: 900px) {
+  .hero__floating-icons {
+    display: none;
+  }
+
+  .nav {
+    width: 85%;
+  }
+
   .hero__container {
     flex-direction: column;
     text-align: center;
   }
-  .hero__subtitle, .waitlist-form, .waitlist-form__success {
+
+  .hero__subtitle,
+  .waitlist-form,
+  .waitlist-form__success {
     margin-left: auto;
     margin-right: auto;
   }
+
   .hero__phone-wrapper {
     justify-content: center;
+    transform: scale(0.85);
+    margin-top: -20px;
+    margin-bottom: -20px;
   }
 }
 
@@ -222,7 +239,7 @@ body:before {
   border-radius: 40px;
   border: 8px solid #333;
   position: relative;
-  box-shadow: 0 25px 50px rgba(0,0,0,0.5);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
   overflow: hidden;
 }
 
@@ -288,13 +305,14 @@ body:before {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 45px 20px 15px; /* Account for phone notch */
+  padding: 45px 20px 15px;
+  /* Account for phone notch */
   background: var(--white);
   font-family: var(--font-body);
   font-weight: 600;
   font-size: 14px;
   color: var(--teal);
-  border-bottom: 1px solid rgba(0,0,0,0.05);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   z-index: 10;
 }
 
@@ -359,7 +377,7 @@ body:before {
   padding: 40px;
 }
 
-.phone-s2__img-wrapper img, 
+.phone-s2__img-wrapper img,
 .phone-s3__img-wrapper img,
 .phone-s4__match-item img,
 .phone-s4__item img,
@@ -387,7 +405,7 @@ body:before {
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
   padding: 20px;
 }
 
@@ -425,26 +443,28 @@ body:before {
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
   overflow: hidden;
   padding: 20px;
 }
 
-.phone-s4__grid, .phone-s5__grid {
+.phone-s4__grid,
+.phone-s5__grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 15px;
   padding: 0 20px 20px;
 }
 
-.phone-s4__item, .phone-s5__item {
+.phone-s4__item,
+.phone-s5__item {
   background: var(--white);
   border-radius: 15px;
   height: 120px;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
   overflow: hidden;
   padding: 15px;
 }
@@ -476,7 +496,7 @@ body:before {
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
   overflow: hidden;
   padding: 30px;
 }
@@ -538,7 +558,7 @@ body:before {
   color: var(--teal);
   align-self: flex-start;
   border-bottom-left-radius: 4px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
 
 .hero__shape {
@@ -600,7 +620,9 @@ body:before {
 }
 
 @keyframes pulse-dot {
-  0%, 100% {
+
+  0%,
+  100% {
     opacity: 1;
     transform: scale(1);
   }
@@ -916,6 +938,58 @@ body:before {
 .problem__quote strong {
   color: var(--coral);
   font-weight: 600;
+}
+
+/* ===== PHOTO GALLERY (inside horizontal scroll) ===== */
+.photo-gallery {
+  position: relative;
+}
+
+.photo-gallery__item {
+  flex-shrink: 0;
+  width: 150px;
+  height: 200px;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.5s var(--ease-out-expo), box-shadow 0.5s var(--ease-out-expo);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+}
+
+.photo-gallery__item--large {
+  width: 200px;
+  height: 250px;
+}
+
+.photo-gallery__item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 16px 50px rgba(0, 0, 0, 0.15);
+}
+
+.photo-gallery__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: grayscale(100%);
+  transition: transform 0.6s var(--ease-out-expo);
+}
+
+.photo-gallery__item:hover img {
+  transform: scale(1.08);
+}
+
+@media (max-width: 768px) {
+  .photo-gallery__item {
+    width: 162px;
+    height: 216px;
+  }
+
+  .photo-gallery__item--large {
+    width: 189px;
+    height: 261px;
+  }
 }
 
 .solution-intro {
@@ -1541,16 +1615,55 @@ body:before {
 }
 
 @media (max-width: 900px) {
+  .problem {
+    height: auto;
+    padding: 100px 20px;
+  }
+
+  .problem__layout {
+    flex-direction: column;
+  }
+
+  .problem__left {
+    transform: none;
+    width: 100%;
+  }
+
+  .problem__right {
+    display: none;
+  }
+
+  .problem__header {
+    text-align: center;
+  }
+
   .problem__stats {
     grid-template-columns: 1fr;
     max-width: 400px;
+    margin: 0 auto;
   }
 
   .buy-smart__steps {
-    grid-template-columns: 1fr;
-    max-width: 500px;
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 16px;
+    padding-bottom: 24px;
+    margin-left: -24px;
+    margin-right: -24px;
+    padding-left: 24px;
+    padding-right: 24px;
+    -webkit-overflow-scrolling: touch;
+    max-width: none;
+  }
+
+  .buy-smart__steps::-webkit-scrollbar {
+    display: none;
+  }
+
+  .step-card {
+    flex: 0 0 85%;
+    scroll-snap-align: center;
   }
 
   .borrow-more__grid {
@@ -1574,6 +1687,7 @@ body:before {
 
   .nav {
     padding: 16px 20px;
+    width: 95%;
   }
 
   .nav__logo-text {
@@ -1587,22 +1701,42 @@ body:before {
   }
 
   .hero {
-    padding: 100px 20px 60px;
+    padding: 140px 16px 40px;
+  }
+
+  .hero__phone-wrapper {
+    transform: scale(0.7);
+    margin-top: -60px;
+    margin-bottom: -60px;
   }
 
   .waitlist-form {
-    border-radius: 16px;
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
     flex-direction: column;
+    gap: 12px;
+  }
+
+  .waitlist-form:focus-within {
+    box-shadow: none;
   }
 
   .waitlist-form__input {
     text-align: center;
-    border-radius: 0;
+    border-radius: 16px;
     height: 52px;
+    border: 2px solid #0155511f;
+    padding: 16px 12px;
+  }
+
+  .waitlist-form__input:focus {
+    border-color: var(--coral);
   }
 
   .waitlist-form__btn {
     height: 52px;
+    border-radius: 16px;
   }
 
   .waitlist-form__success {
@@ -1611,7 +1745,8 @@ body:before {
     font-size: 14px;
   }
 
-  .problem, .solution-intro {
+  .problem,
+  .solution-intro {
     padding: 100px 20px;
   }
 
@@ -1620,7 +1755,8 @@ body:before {
     align-items: center;
   }
 
-  .buy-smart, .borrow-more {
+  .buy-smart,
+  .borrow-more {
     padding: 100px 20px;
   }
 
@@ -1628,23 +1764,30 @@ body:before {
     padding: 32px 24px;
   }
 
-  .differentiator, .cta-section {
+  .differentiator,
+  .cta-section {
     padding: 100px 20px;
   }
 
   .cta-form {
-    border-radius: 16px;
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
     flex-direction: column;
+    gap: 12px;
   }
 
   .cta-form__input {
     text-align: center;
-    border-radius: 0;
+    border-radius: 16px;
     height: 52px;
+    border: 2px solid #0155511f;
+    padding: 16px 12px;
   }
 
   .cta-form__btn {
     height: 52px;
+    border-radius: 16px;
   }
 
   .cta-form__success {
@@ -1748,9 +1891,30 @@ body:before {
 
 
 /* Floating Icons Fix */
-.hero__floating-icons { position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 20; }
-.hero__floating-icon { position: absolute; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; }
-.hero__floating-icon img { width: 100%; height: 100%; object-fit: contain; }
+.hero__floating-icons {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 20;
+}
+
+.hero__floating-icon {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero__floating-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
 
 
 /* UI SCREENS FIX */
@@ -1769,11 +1933,14 @@ body:before {
   box-sizing: border-box;
 }
 
-.phone-s5, .phone-s6, .phone-s7 {
+.phone-s5,
+.phone-s6,
+.phone-s7 {
   gap: 12px;
 }
 
-.phone-s5__item, .phone-s6__item {
+.phone-s5__item,
+.phone-s6__item {
   background: var(--gray-light);
   border-radius: 12px;
   height: 90px;
@@ -1789,6 +1956,7 @@ body:before {
   align-items: flex-start;
   gap: 12px;
 }
+
 .phone-s7__bubble {
   padding: 12px 16px;
   border-radius: 20px;
@@ -1797,12 +1965,14 @@ body:before {
   line-height: 1.4;
   max-width: 90%;
 }
+
 .phone-s7__bubble--sent {
   background: var(--teal);
   color: var(--white);
   border-bottom-right-radius: 4px;
   align-self: flex-end;
 }
+
 .phone-s7__bubble--received {
   background: var(--gray-light);
   color: var(--dark);

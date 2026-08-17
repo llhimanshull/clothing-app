@@ -42,49 +42,53 @@ export default function Hero({ isLoaded }) {
           1.0
         );
 
-      // Smartphone trajectory (moving to Problem section)
-      gsap.to(phoneAnimRef.current, {
-        x: 0,
-        y: () => {
-          const dest = document.getElementById("problem-phone-dest");
-          if (!dest) return 800;
-          const getOffsetTop = (el) => el.getBoundingClientRect().top + window.scrollY;
-          return getOffsetTop(dest) - getOffsetTop(phoneAnimRef.current) + 20; // stop a bit further down
-        },
-        ease: "none",
-        scrollTrigger: {
-          trigger: sectionRef.current,
-          start: "top top",
-          end: () => {
-            const dest = document.getElementById("problem-phone-dest");
-            if (!dest) return "+=800";
-            const getOffsetTop = (el) => el.getBoundingClientRect().top + window.scrollY;
-            const dist = getOffsetTop(dest) - getOffsetTop(phoneAnimRef.current) + 20;
-            return `+=${dist}`;
-          },
-          scrub: 1.5,
-          invalidateOnRefresh: true,
-        }
-      });
+      let mm = gsap.matchMedia();
 
-      // Smartphone 360 rotation
-      gsap.to(phoneRef.current, {
-        rotation: 375, // Starts at 15deg, rotates 360deg
-        transformOrigin: "50% 50%",
-        ease: "none",
-        scrollTrigger: {
-          trigger: sectionRef.current,
-          start: "top top",
-          end: () => {
+      mm.add("(min-width: 901px)", () => {
+        // Smartphone trajectory (moving to Problem section)
+        gsap.to(phoneAnimRef.current, {
+          x: 0,
+          y: () => {
             const dest = document.getElementById("problem-phone-dest");
-            if (!dest) return "+=800";
+            if (!dest) return 800;
             const getOffsetTop = (el) => el.getBoundingClientRect().top + window.scrollY;
-            const dist = getOffsetTop(dest) - getOffsetTop(phoneAnimRef.current) + 60;
-            return `+=${dist}`;
+            return getOffsetTop(dest) - getOffsetTop(phoneAnimRef.current) + 70; // stop a bit further down
           },
-          scrub: 1.5,
-          invalidateOnRefresh: true,
-        }
+          ease: "none",
+          scrollTrigger: {
+            trigger: sectionRef.current,
+            start: "top top",
+            end: () => {
+              const dest = document.getElementById("problem-phone-dest");
+              if (!dest) return "+=800";
+              const getOffsetTop = (el) => el.getBoundingClientRect().top + window.scrollY;
+              const dist = getOffsetTop(dest) - getOffsetTop(phoneAnimRef.current) + 70;
+              return `+=${dist}`;
+            },
+            scrub: 1.5,
+            invalidateOnRefresh: true,
+          }
+        });
+
+        // Smartphone 360 rotation
+        gsap.to(phoneRef.current, {
+          rotation: 375, // Starts at 15deg, rotates 360deg
+          transformOrigin: "50% 50%",
+          ease: "none",
+          scrollTrigger: {
+            trigger: sectionRef.current,
+            start: "top top",
+            end: () => {
+              const dest = document.getElementById("problem-phone-dest");
+              if (!dest) return "+=800";
+              const getOffsetTop = (el) => el.getBoundingClientRect().top + window.scrollY;
+              const dist = getOffsetTop(dest) - getOffsetTop(phoneAnimRef.current) + 110;
+              return `+=${dist}`;
+            },
+            scrub: 1.5,
+            invalidateOnRefresh: true,
+          }
+        });
       });
     }, sectionRef);
 
