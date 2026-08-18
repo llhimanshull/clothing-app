@@ -73,13 +73,13 @@ export default function RootLayout({ children }) {
         <div className="noise-overlay" />
         {children}
         {/* Google Analytics */}
-        <Script src="https://www.googletagmanager.com/gtag/js?id=G-YOUR_MEASUREMENT_ID" strategy="afterInteractive" />
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-YPKF9MJ4HG" strategy="afterInteractive" />
         <Script id="google-analytics" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-YOUR_MEASUREMENT_ID');
+            gtag('config', 'G-YPKF9MJ4HG');
           `}
         </Script>
       </body>
