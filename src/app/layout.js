@@ -67,6 +67,8 @@ export default function RootLayout({ children }) {
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <script data-goatcounter="https://1himanshu1.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
       </head>
       <body>
         <div className="noise-overlay" />
