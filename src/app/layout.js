@@ -72,8 +72,16 @@ export default function RootLayout({ children }) {
       <body>
         <div className="noise-overlay" />
         {children}
-        <Script data-goatcounter="https://lhimanshul.goatcounter.com/count"
-          src="//gc.zgo.at/count.js" strategy="afterInteractive" />
+        {/* Google Analytics */}
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-YOUR_MEASUREMENT_ID" strategy="afterInteractive" />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-YOUR_MEASUREMENT_ID');
+          `}
+        </Script>
       </body>
     </html>
   );
