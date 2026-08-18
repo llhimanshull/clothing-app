@@ -72,7 +72,7 @@ export default function RootLayout({ children }) {
       <body>
         <div className="noise-overlay" />
         {children}
-        <Script data-goatcounter="https://1himanshu1.goatcounter.com/count"
+        <Script data-goatcounter="https://lhimanshul.goatcounter.com/count"
           src="//gc.zgo.at/count.js" strategy="afterInteractive" />
       </body>
     </html>
