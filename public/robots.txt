@@ -1,4 +1,4 @@
 User-Agent: *
 Allow: /
 
-Sitemap: https://www.atayr.com/sitemap.xml
+Sitemap: https://www.atayr.site/sitemap.xml
